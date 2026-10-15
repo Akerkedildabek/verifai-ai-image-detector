@@ -1,0 +1,61 @@
+LANGUAGES = ["Қазақша", "Русский", "English"]
+
+TEXT = {
+"Қазақша": {
+"nav_analyze":"🖼️ Суретті талдау","nav_batch":"📚 Жаппай талдау","nav_model":"🧠 Модель туралы","nav_deploy":"🚀 GitHub / Deploy",
+"title":"Суретті анықтау платформасы","subtitle":"Суретті жүктеп, оның шынайы (REAL) немесе жасанды интеллект арқылы жасалған (AI-GENERATED) болу ықтималдығын бағалаңыз.",
+"upload":"Суретті таңдаңыз","upload_help":"PNG, JPG, JPEG немесе WEBP. 20 MB-қа дейін.","upload_hint":"Талдауды бастау үшін бір сурет жүктеңіз.","too_large":"Файл 20 MB-тан үлкен.",
+"result_heading":"Талдау нәтижесі","analyze_button":"Талдауды бастау","press_analyze":"Сурет дайын. Нәтижені алу үшін батырманы басыңыз.","model_loading":"Дайын модель жүктелуде және сурет талдануда…",
+"model_error":"Модельді іске қосу мүмкін болмады.","analysis_error":"Талдау қатесі","ai_probability":"AI ықтималдығы","real_probability":"REAL ықтималдығы","inference_time":"Inference уақыты","decision_threshold":"AI шегі",
+"probability_warning":"Бұл нәтиже модельдің ықтималдық бағасы ғана. Оны студентті айыптау, тәртіптік жаза немесе басқа жоғары тәуекелді шешім үшін жалғыз дәлел ретінде қолданбаңыз.",
+"evidence_heading":"Қосымша форензикалық белгілер","metadata_found":"Файл метадеректерінен AI құралдарына ұқсас маркерлер табылды. Олар модель ықтималдығына қосылмайды.","metadata_none":"Белгілі AI-generator маркерлері метадеректерден табылмады. Маркердің жоқ болуы суреттің шынайы екенін дәлелдемейді.",
+"what_model_checks":"**Модель нені тексереді?** 384×384 орталық көріністегі визуалды синтез белгілерін. Ол мәтіннің авторын, плагиатты немесе студенттің жұмысты өзі орындағанын анықтамайды.","whole_image_note":"Бұл whole-image detector: суреттің кішкентай өңделген бөлігін сенімді локализацияламайды.",
+"download_report":"JSON есепті жүктеу","technical_details":"Техникалық мәліметтер",
+"batch_title":"Жаппай сурет талдауы","batch_subtitle":"Бір уақытта бірнеше студент жұмысының немесе фотосуреттің суретін тексеріңіз.","batch_upload":"Суреттерді таңдаңыз","batch_limit":"Бір іске қосуда ең көбі 12 сурет талданады.","analyze_all":"Барлығын талдау","download_csv":"CSV нәтижелерін жүктеу",
+"model_title":"Модель туралы","model_intro":"VERIFAI алдын ала оқытылған Community Forensics frontier detector моделін пайдаланады. Қолданба модельді қайта оқытпайды.","published_validation":"Жарияланған validation нәтижелері","published_not_ours":"Төмендегі сандар — модель авторларының development/calibration бағалауы; VERIFAI өзіне телімейді.",
+"training_data":"Оқыту деректері","training_data_text":"Жарияланған модель картасына сәйкес fine-tuned detector 109,560 training суретін (41,313 real + 68,247 AI-generated) және көптеген заманауи генератор көздерін қамтиды.",
+"limits":"Шектеулер","limits_text":"- Қатты сығылған және 96–128 px өте төмен сапалы суреттер әлсіз болуы мүмкін.\n- Whole-image classifier шағын AI-патчтарды өткізіп жіберуі мүмкін.\n- Жаңа генераторлар пайда болған сайын detector ескіреді.\n- Нәтиже provenance дәлелі емес.",
+"model_contract":"Модель контракты","deploy_title":"GitHub және Streamlit Cloud","deploy_intro":"Бұл репозиторий GitHub-қа жүктеп, Streamlit Community Cloud-та жариялауға дайын.",
+"deploy_steps":"1. GitHub-та жаңа public repository ашыңыз.\n2. Осы папканың барлық файлын repository root-қа жүктеңіз.\n3. `share.streamlit.io` → **Create app**.\n4. Repository-ді таңдаңыз, entrypoint ретінде `app.py` көрсетіңіз.\n5. Python 3.11 немесе 3.12 таңдаңыз да Deploy басыңыз.\n6. Алғашқы inference кезінде ~44 MB pretrained ONNX модель автоматты жүктеледі және cache-та сақталады.",
+"first_start":"Бірінші іске қосу ұзағырақ болуы мүмкін, себебі сервер pretrained модельді бір рет жүктейді. Одан кейін қайта оқыту қажет емес.",
+},
+"Русский": {
+"nav_analyze":"🖼️ Анализ изображения","nav_batch":"📚 Пакетный анализ","nav_model":"🧠 О модели","nav_deploy":"🚀 GitHub / Deploy",
+"title":"Платформа определения изображений","subtitle":"Загрузите изображение и оцените вероятность того, что оно является реальным (REAL) или сгенерированным ИИ (AI-GENERATED).",
+"upload":"Выберите изображение","upload_help":"PNG, JPG, JPEG или WEBP, до 20 MB.","upload_hint":"Загрузите одно изображение, чтобы начать анализ.","too_large":"Файл больше 20 MB.",
+"result_heading":"Результат анализа","analyze_button":"Начать анализ","press_analyze":"Изображение готово. Нажмите кнопку, чтобы получить результат.","model_loading":"Загружается готовая модель и выполняется анализ…",
+"model_error":"Не удалось запустить модель.","analysis_error":"Ошибка анализа","ai_probability":"Вероятность AI","real_probability":"Вероятность REAL","inference_time":"Время inference","decision_threshold":"Порог AI",
+"probability_warning":"Это вероятностная оценка модели. Не используйте её как единственное доказательство для обвинений, дисциплинарных или иных решений высокого риска.",
+"evidence_heading":"Дополнительные forensic-сигналы","metadata_found":"В метаданных найдены маркеры, похожие на AI-инструменты. Они не добавляются к вероятности модели.","metadata_none":"Известные AI-маркеры в метаданных не найдены. Их отсутствие не доказывает подлинность изображения.",
+"what_model_checks":"**Что проверяет модель?** Визуальные признаки синтеза в центральном представлении 384×384. Она не определяет автора текста, плагиат или то, выполнил ли студент работу самостоятельно.","whole_image_note":"Это whole-image detector: он не предназначен для надёжной локализации маленьких AI-изменений.",
+"download_report":"Скачать JSON-отчёт","technical_details":"Технические детали",
+"batch_title":"Пакетный анализ изображений","batch_subtitle":"Проверьте сразу несколько изображений студенческих работ или фотографий.","batch_upload":"Выберите изображения","batch_limit":"За один запуск анализируется максимум 12 изображений.","analyze_all":"Анализировать всё","download_csv":"Скачать CSV",
+"model_title":"О модели","model_intro":"VERIFAI использует предварительно обученный Community Forensics frontier detector. Обучение при запуске приложения не выполняется.","published_validation":"Опубликованные validation-результаты","published_not_ours":"Эти показатели опубликованы авторами модели на development/calibration данных и не являются собственной оценкой VERIFAI.",
+"training_data":"Данные обучения","training_data_text":"По карточке модели fine-tuned detector обучался на 109 560 изображениях (41 313 real + 68 247 AI-generated), включая множество современных генераторов.",
+"limits":"Ограничения","limits_text":"- Сильное сжатие и очень низкое разрешение 96–128 px ухудшают качество.\n- Whole-image classifier может пропустить небольшой AI-фрагмент.\n- Новые генераторы со временем снижают актуальность detector.\n- Результат не является доказательством provenance.",
+"model_contract":"Контракт модели","deploy_title":"GitHub и Streamlit Cloud","deploy_intro":"Репозиторий подготовлен для GitHub и Streamlit Community Cloud.",
+"deploy_steps":"1. Создайте новый public repository на GitHub.\n2. Загрузите все файлы этой папки в корень repository.\n3. Откройте `share.streamlit.io` → **Create app**.\n4. Выберите repository и укажите entrypoint `app.py`.\n5. Выберите Python 3.11 или 3.12 и нажмите Deploy.\n6. При первом inference pretrained ONNX-модель (~44 MB) автоматически загрузится и сохранится в cache.",
+"first_start":"Первый запуск может быть дольше: сервер один раз загружает готовую модель. Переобучение не требуется.",
+},
+"English": {
+"nav_analyze":"🖼️ Analyze image","nav_batch":"📚 Batch analysis","nav_model":"🧠 About model","nav_deploy":"🚀 GitHub / Deploy",
+"title":"Image Authenticity Analyzer","subtitle":"Upload an image and estimate whether it is REAL or AI-GENERATED.",
+"upload":"Choose an image","upload_help":"PNG, JPG, JPEG or WEBP, up to 20 MB.","upload_hint":"Upload one image to start.","too_large":"The file is larger than 20 MB.",
+"result_heading":"Analysis result","analyze_button":"Analyze image","press_analyze":"The image is ready. Press the button to run inference.","model_loading":"Loading the pretrained model and analyzing the image…",
+"model_error":"The model could not be started.","analysis_error":"Analysis error","ai_probability":"AI probability","real_probability":"REAL probability","inference_time":"Inference time","decision_threshold":"AI threshold",
+"probability_warning":"This is a probabilistic screening signal. Do not use it as the sole evidence for accusations, disciplinary action, or other high-stakes decisions.",
+"evidence_heading":"Additional forensic signals","metadata_found":"AI-tool-like metadata markers were found. They are shown separately and are not fused into the model probability.","metadata_none":"No known AI-generator markers were found in metadata. Absence of metadata does not prove authenticity.",
+"what_model_checks":"**What does the model check?** Visual synthesis cues in a 384×384 center view. It does not determine text authorship, plagiarism, or whether a student personally completed an assignment.","whole_image_note":"This is a whole-image detector and is not a reliable localizer for tiny synthetic edits.",
+"download_report":"Download JSON report","technical_details":"Technical details",
+"batch_title":"Batch image analysis","batch_subtitle":"Analyze multiple student-work images or photographs in one run.","batch_upload":"Choose images","batch_limit":"A maximum of 12 images is analyzed per run.","analyze_all":"Analyze all","download_csv":"Download CSV",
+"model_title":"About the model","model_intro":"VERIFAI uses a pretrained Community Forensics frontier detector. No training runs when the app starts.","published_validation":"Published validation results","published_not_ours":"These are model-card development/calibration results, not VERIFAI's own evaluation.",
+"training_data":"Training data","training_data_text":"According to the model card, the fine-tuned detector used 109,560 training images (41,313 real + 68,247 AI-generated) across many modern generator sources.",
+"limits":"Limitations","limits_text":"- Severe compression and very low 96–128 px inputs are weak cases.\n- A whole-image classifier can miss a small synthetic patch.\n- New generators can age the detector.\n- The score is not provenance proof.",
+"model_contract":"Model contract","deploy_title":"GitHub and Streamlit Cloud","deploy_intro":"This repository is ready to push to GitHub and deploy on Streamlit Community Cloud.",
+"deploy_steps":"1. Create a new public GitHub repository.\n2. Upload all files from this folder to the repository root.\n3. Go to `share.streamlit.io` → **Create app**.\n4. Select the repository and set `app.py` as the entrypoint.\n5. Choose Python 3.11 or 3.12 and deploy.\n6. On first inference the pretrained ~44 MB ONNX model is downloaded automatically and cached.",
+"first_start":"The first run can take longer because the server downloads the pretrained model once. No retraining is required.",
+}
+}
+
+def t(lang: str, key: str) -> str:
+    return TEXT.get(lang, TEXT["English"]).get(key, key)

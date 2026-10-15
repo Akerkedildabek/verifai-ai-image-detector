@@ -8,6 +8,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      PYTHONPATH: .
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,7 +28,7 @@ jobs:
           pip install pytest
 
       - name: Run tests
-        run: pytest -q
+        run: python -m pytest -q
 
       - name: Check project structure
         run: python scripts/check_project.py
